@@ -1,0 +1,75 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Browser</title>
+    <style>
+        #heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 110%;
+            top: 50%;
+            width: 50px;
+            height: 80px;
+            background: red;
+            border-radius: 70px 0px 50px 0;
+            transform: translate(-50%, -50%, 0%) rotate(-45deg);
+            transform-origin: 0% 100%;
+        }
+
+        #heart:after {
+            top: 60%;
+            left: 100px;
+            transform: translate(100%, 50%) rotate(90deg);
+            transform-origin: 0% 50%;
+        }
+
+        #heart2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        #heart2:before,
+        #heart2:after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 25%;
+            width: 50px;
+            height: 80px;
+            background: red;
+            border-radius: 70px 0px 50px 0;
+            transform: translate(50%, 50%, 0%) rotate(-270deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart2:after {
+            top: -75%;
+            left: 100px;
+            transform: translate(-100%, -50%) rotate(270deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="heart"></p>
+    <p id="heart2"></p>
+
+</body>
+
+</html>
